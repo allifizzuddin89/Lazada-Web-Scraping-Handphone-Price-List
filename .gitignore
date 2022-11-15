@@ -26,6 +26,7 @@ share/python-wheels/
 .installed.cfg
 *.egg
 MANIFEST
+lazada_phone_listing/lazada_phone_listing/spiders/creds.py
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
