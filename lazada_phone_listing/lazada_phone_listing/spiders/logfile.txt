@@ -1,0 +1,122 @@
+2022-11-15 17:33:11,261 - INFO - Scrapy 2.7.1 started (bot: lazada_phone_listing)
+2022-11-15 17:33:11,264 - INFO - Versions: lxml 4.8.0.0, libxml2 2.9.12, cssselect 1.2.0, parsel 1.7.0, w3lib 1.22.0, Twisted 22.10.0, Python 3.9.13 | packaged by conda-forge | (main, May 27 2022, 16:56:21) - [GCC 10.3.0], pyOpenSSL 22.1.0 (OpenSSL 1.1.1s  1 Nov 2022), cryptography 38.0.3, Platform Linux-5.4.0-131-generic-x86_64-with-glibc2.31
+2022-11-15 17:33:11,266 - INFO - Overridden settings:
+{'AUTOTHROTTLE_ENABLED': True,
+ 'BOT_NAME': 'lazada_phone_listing',
+ 'NEWSPIDER_MODULE': 'lazada_phone_listing.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'SPIDER_LOADER_WARN_ONLY': True,
+ 'SPIDER_MODULES': ['lazada_phone_listing.spiders']}
+2022-11-15 17:33:11,267 - DEBUG - Using reactor: twisted.internet.epollreactor.EPollReactor
+2022-11-15 17:33:11,272 - INFO - Telnet Password: 7bea81bda95fe8f2
+2022-11-15 17:33:11,277 - INFO - Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.throttle.AutoThrottle']
+2022-11-15 17:33:11,310 - INFO - Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2022-11-15 17:33:11,311 - INFO - Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2022-11-15 17:33:11,311 - INFO - Enabled item pipelines:
+[]
+2022-11-15 17:33:11,311 - INFO - Spider opened
+2022-11-15 17:33:11,341 - INFO - Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2022-11-15 17:33:11,342 - INFO - Telnet console listening on 127.0.0.1:6023
+2022-11-15 17:33:11,343 - DEBUG - Attempting to acquire lock 139795626459088 on /home/allifizzuddin/.cache/python-tldextract/3.9.13.final__dev_v2__a1a571__tldextract-3.4.0/publicsuffix.org-tlds/de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2022-11-15 17:33:11,343 - DEBUG - Lock 139795626459088 acquired on /home/allifizzuddin/.cache/python-tldextract/3.9.13.final__dev_v2__a1a571__tldextract-3.4.0/publicsuffix.org-tlds/de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2022-11-15 17:33:11,344 - DEBUG - Attempting to release lock 139795626459088 on /home/allifizzuddin/.cache/python-tldextract/3.9.13.final__dev_v2__a1a571__tldextract-3.4.0/publicsuffix.org-tlds/de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2022-11-15 17:33:11,344 - DEBUG - Lock 139795626459088 released on /home/allifizzuddin/.cache/python-tldextract/3.9.13.final__dev_v2__a1a571__tldextract-3.4.0/publicsuffix.org-tlds/de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2022-11-15 17:33:12,115 - DEBUG - Crawled (200) <GET https://www.lazada.com.my/shop-mobiles/?ajax=true&isFirstRequest=true&page=1&spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG> (referer: https://www.lazada.com.my/shop-mobiles/?spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG)
+2022-11-15 17:33:15,141 - DEBUG - Crawled (200) <GET https://www.lazada.com.my/shop-mobiles/?ajax=true&isFirstRequest=true&page=2&spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG> (referer: https://www.lazada.com.my/shop-mobiles/?spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG)
+2022-11-15 17:33:18,893 - DEBUG - Crawled (200) <GET https://www.lazada.com.my/shop-mobiles/?ajax=true&isFirstRequest=true&page=3&spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG> (referer: https://www.lazada.com.my/shop-mobiles/?spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG)
+2022-11-15 17:33:20,575 - DEBUG - Crawled (200) <GET https://www.lazada.com.my/shop-mobiles/?ajax=true&isFirstRequest=true&page=4&spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG> (referer: https://www.lazada.com.my/shop-mobiles/?spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG)
+2022-11-15 17:33:21,935 - DEBUG - Crawled (200) <GET https://www.lazada.com.my/shop-mobiles/?ajax=true&isFirstRequest=true&page=5&spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG> (referer: https://www.lazada.com.my/shop-mobiles/?spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG)
+2022-11-15 17:33:23,061 - DEBUG - Crawled (200) <GET https://www.lazada.com.my/shop-mobiles/?ajax=true&isFirstRequest=true&page=6&spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG> (referer: https://www.lazada.com.my/shop-mobiles/?spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG)
+2022-11-15 17:33:23,964 - DEBUG - Crawled (200) <GET https://www.lazada.com.my/shop-mobiles/?ajax=true&isFirstRequest=true&page=7&spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG> (referer: https://www.lazada.com.my/shop-mobiles/?spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG)
+2022-11-15 17:33:24,618 - DEBUG - Crawled (200) <GET https://www.lazada.com.my/shop-mobiles/?ajax=true&isFirstRequest=true&page=8&spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG> (referer: https://www.lazada.com.my/shop-mobiles/?spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG)
+2022-11-15 17:33:25,278 - DEBUG - Crawled (200) <GET https://www.lazada.com.my/shop-mobiles/?ajax=true&isFirstRequest=true&page=9&spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG> (referer: https://www.lazada.com.my/shop-mobiles/?spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG)
+2022-11-15 17:33:25,938 - DEBUG - Crawled (200) <GET https://www.lazada.com.my/shop-mobiles/?ajax=true&isFirstRequest=true&page=10&spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG> (referer: https://www.lazada.com.my/shop-mobiles/?spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG)
+2022-11-15 17:33:26,640 - DEBUG - Crawled (200) <GET https://www.lazada.com.my/shop-mobiles/?ajax=true&isFirstRequest=true&page=11&spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG> (referer: https://www.lazada.com.my/shop-mobiles/?spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG)
+2022-11-15 17:33:27,483 - DEBUG - Crawled (200) <GET https://www.lazada.com.my/shop-mobiles/?ajax=true&isFirstRequest=true&page=12&spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG> (referer: https://www.lazada.com.my/shop-mobiles/?spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG)
+2022-11-15 17:33:28,248 - DEBUG - Crawled (200) <GET https://www.lazada.com.my/shop-mobiles/?ajax=true&isFirstRequest=true&page=13&spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG> (referer: https://www.lazada.com.my/shop-mobiles/?spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG)
+2022-11-15 17:33:29,054 - DEBUG - Crawled (200) <GET https://www.lazada.com.my/shop-mobiles/?ajax=true&isFirstRequest=true&page=14&spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG> (referer: https://www.lazada.com.my/shop-mobiles/?spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG)
+2022-11-15 17:33:29,879 - DEBUG - Crawled (200) <GET https://www.lazada.com.my/shop-mobiles/?ajax=true&isFirstRequest=true&page=15&spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG> (referer: https://www.lazada.com.my/shop-mobiles/?spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG)
+2022-11-15 17:33:30,508 - DEBUG - Crawled (200) <GET https://www.lazada.com.my/shop-mobiles/?ajax=true&isFirstRequest=true&page=16&spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG> (referer: https://www.lazada.com.my/shop-mobiles/?spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG)
+2022-11-15 17:33:31,064 - DEBUG - Crawled (200) <GET https://www.lazada.com.my/shop-mobiles/?ajax=true&isFirstRequest=true&page=17&spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG> (referer: https://www.lazada.com.my/shop-mobiles/?spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG)
+2022-11-15 17:33:31,659 - DEBUG - Crawled (200) <GET https://www.lazada.com.my/shop-mobiles/?ajax=true&isFirstRequest=true&page=19&spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG> (referer: https://www.lazada.com.my/shop-mobiles/?spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG)
+2022-11-15 17:33:31,721 - DEBUG - Crawled (200) <GET https://www.lazada.com.my/shop-mobiles/?ajax=true&isFirstRequest=true&page=18&spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG> (referer: https://www.lazada.com.my/shop-mobiles/?spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG)
+2022-11-15 17:33:32,313 - DEBUG - Crawled (200) <GET https://www.lazada.com.my/shop-mobiles/?ajax=true&isFirstRequest=true&page=20&spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG> (referer: https://www.lazada.com.my/shop-mobiles/?spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG)
+2022-11-15 17:33:32,723 - DEBUG - Crawled (200) <GET https://www.lazada.com.my/shop-mobiles/?ajax=true&isFirstRequest=true&page=21&spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG> (referer: https://www.lazada.com.my/shop-mobiles/?spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG)
+2022-11-15 17:33:33,233 - DEBUG - Crawled (200) <GET https://www.lazada.com.my/shop-mobiles/?ajax=true&isFirstRequest=true&page=22&spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG> (referer: https://www.lazada.com.my/shop-mobiles/?spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG)
+2022-11-15 17:33:33,549 - DEBUG - Crawled (200) <GET https://www.lazada.com.my/shop-mobiles/?ajax=true&isFirstRequest=true&page=23&spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG> (referer: https://www.lazada.com.my/shop-mobiles/?spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG)
+2022-11-15 17:33:33,799 - DEBUG - Crawled (200) <GET https://www.lazada.com.my/shop-mobiles/?ajax=true&isFirstRequest=true&page=24&spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG> (referer: https://www.lazada.com.my/shop-mobiles/?spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG)
+2022-11-15 17:33:33,979 - DEBUG - Crawled (200) <GET https://www.lazada.com.my/shop-mobiles/?ajax=true&isFirstRequest=true&page=25&spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG> (referer: https://www.lazada.com.my/shop-mobiles/?spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG)
+2022-11-15 17:33:34,051 - DEBUG - Crawled (200) <GET https://www.lazada.com.my/shop-mobiles/?ajax=true&isFirstRequest=true&page=26&spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG> (referer: https://www.lazada.com.my/shop-mobiles/?spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG)
+2022-11-15 17:33:34,222 - DEBUG - Crawled (200) <GET https://www.lazada.com.my/shop-mobiles/?ajax=true&isFirstRequest=true&page=27&spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG> (referer: https://www.lazada.com.my/shop-mobiles/?spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG)
+2022-11-15 17:33:34,354 - DEBUG - Crawled (200) <GET https://www.lazada.com.my/shop-mobiles/?ajax=true&isFirstRequest=true&page=28&spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG> (referer: https://www.lazada.com.my/shop-mobiles/?spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG)
+2022-11-15 17:33:34,475 - DEBUG - Crawled (200) <GET https://www.lazada.com.my/shop-mobiles/?ajax=true&isFirstRequest=true&page=29&spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG> (referer: https://www.lazada.com.my/shop-mobiles/?spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG)
+2022-11-15 17:33:35,053 - DEBUG - Crawled (200) <GET https://www.lazada.com.my/shop-mobiles/?ajax=true&isFirstRequest=true&page=30&spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG> (referer: https://www.lazada.com.my/shop-mobiles/?spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG)
+2022-11-15 17:33:35,113 - DEBUG - Crawled (200) <GET https://www.lazada.com.my/shop-mobiles/?ajax=true&isFirstRequest=true&page=31&spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG> (referer: https://www.lazada.com.my/shop-mobiles/?spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG)
+2022-11-15 17:33:35,399 - DEBUG - Crawled (200) <GET https://www.lazada.com.my/shop-mobiles/?ajax=true&isFirstRequest=true&page=32&spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG> (referer: https://www.lazada.com.my/shop-mobiles/?spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG)
+2022-11-15 17:33:35,551 - DEBUG - Crawled (200) <GET https://www.lazada.com.my/shop-mobiles/?ajax=true&isFirstRequest=true&page=33&spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG> (referer: https://www.lazada.com.my/shop-mobiles/?spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG)
+2022-11-15 17:33:35,668 - DEBUG - Crawled (200) <GET https://www.lazada.com.my/shop-mobiles/?ajax=true&isFirstRequest=true&page=34&spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG> (referer: https://www.lazada.com.my/shop-mobiles/?spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG)
+2022-11-15 17:33:36,443 - DEBUG - Crawled (200) <GET https://www.lazada.com.my/shop-mobiles/?ajax=true&isFirstRequest=true&page=35&spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG> (referer: https://www.lazada.com.my/shop-mobiles/?spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG)
+2022-11-15 17:33:37,366 - DEBUG - Crawled (200) <GET https://www.lazada.com.my/shop-mobiles/?ajax=true&isFirstRequest=true&page=36&spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG> (referer: https://www.lazada.com.my/shop-mobiles/?spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG)
+2022-11-15 17:33:38,507 - INFO - Received SIGINT, shutting down gracefully. Send again to force 
+2022-11-15 17:33:39,034 - INFO - Received SIGINT twice, forcing unclean shutdown
+2022-11-15 17:33:39,036 - INFO - Closing spider (shutdown)
+2022-11-15 17:33:39,125 - DEBUG - Crawled (200) <GET https://www.lazada.com.my/shop-mobiles/?ajax=true&isFirstRequest=true&page=37&spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG> (referer: https://www.lazada.com.my/shop-mobiles/?spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG)
+2022-11-15 17:33:39,500 - DEBUG - Crawled (200) <GET https://www.lazada.com.my/shop-mobiles/?ajax=true&isFirstRequest=true&page=38&spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG> (referer: https://www.lazada.com.my/shop-mobiles/?spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG)
+2022-11-15 17:33:40,236 - DEBUG - Crawled (200) <GET https://www.lazada.com.my/shop-mobiles/?ajax=true&isFirstRequest=true&page=39&spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG> (referer: https://www.lazada.com.my/shop-mobiles/?spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG)
+2022-11-15 17:33:40,904 - DEBUG - Crawled (200) <GET https://www.lazada.com.my/shop-mobiles/?ajax=true&isFirstRequest=true&page=40&spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG> (referer: https://www.lazada.com.my/shop-mobiles/?spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG)
+2022-11-15 17:33:41,601 - DEBUG - Crawled (200) <GET https://www.lazada.com.my/shop-mobiles/?ajax=true&isFirstRequest=true&page=41&spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG> (referer: https://www.lazada.com.my/shop-mobiles/?spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG)
+2022-11-15 17:33:42,001 - DEBUG - Crawled (200) <GET https://www.lazada.com.my/shop-mobiles/?ajax=true&isFirstRequest=true&page=42&spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG> (referer: https://www.lazada.com.my/shop-mobiles/?spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG)
+2022-11-15 17:33:42,828 - DEBUG - Crawled (200) <GET https://www.lazada.com.my/shop-mobiles/?ajax=true&isFirstRequest=true&page=43&spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG> (referer: https://www.lazada.com.my/shop-mobiles/?spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG)
+2022-11-15 17:33:43,577 - DEBUG - Crawled (200) <GET https://www.lazada.com.my/shop-mobiles/?ajax=true&isFirstRequest=true&page=44&spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG> (referer: https://www.lazada.com.my/shop-mobiles/?spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG)
+2022-11-15 17:33:44,261 - DEBUG - Crawled (200) <GET https://www.lazada.com.my/shop-mobiles/?ajax=true&isFirstRequest=true&page=45&spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG> (referer: https://www.lazada.com.my/shop-mobiles/?spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG)
+2022-11-15 17:33:44,805 - DEBUG - Crawled (200) <GET https://www.lazada.com.my/shop-mobiles/?ajax=true&isFirstRequest=true&page=46&spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG> (referer: https://www.lazada.com.my/shop-mobiles/?spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG)
+2022-11-15 17:33:45,432 - DEBUG - Crawled (200) <GET https://www.lazada.com.my/shop-mobiles/?ajax=true&isFirstRequest=true&page=47&spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG> (referer: https://www.lazada.com.my/shop-mobiles/?spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG)
+2022-11-15 17:33:46,201 - DEBUG - Crawled (200) <GET https://www.lazada.com.my/shop-mobiles/?ajax=true&isFirstRequest=true&page=48&spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG> (referer: https://www.lazada.com.my/shop-mobiles/?spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG)
+2022-11-15 17:33:46,878 - DEBUG - Crawled (200) <GET https://www.lazada.com.my/shop-mobiles/?ajax=true&isFirstRequest=true&page=49&spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG> (referer: https://www.lazada.com.my/shop-mobiles/?spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG)
+2022-11-15 17:33:47,250 - DEBUG - Crawled (200) <GET https://www.lazada.com.my/shop-mobiles/?ajax=true&isFirstRequest=true&page=50&spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG> (referer: https://www.lazada.com.my/shop-mobiles/?spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG)
+2022-11-15 17:33:47,738 - DEBUG - Crawled (200) <GET https://www.lazada.com.my/shop-mobiles/?ajax=true&isFirstRequest=true&page=51&spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG> (referer: https://www.lazada.com.my/shop-mobiles/?spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG)
+2022-11-15 17:33:48,651 - DEBUG - Crawled (200) <GET https://www.lazada.com.my/shop-mobiles/?ajax=true&isFirstRequest=true&page=52&spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG> (referer: https://www.lazada.com.my/shop-mobiles/?spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG)
+2022-11-15 17:33:48,760 - INFO - Dumping Scrapy stats:
+{'downloader/request_bytes': 76483,
+ 'downloader/request_count': 52,
+ 'downloader/request_method_count/GET': 52,
+ 'downloader/response_bytes': 1205287,
+ 'downloader/response_count': 52,
+ 'downloader/response_status_count/200': 52,
+ 'elapsed_time_seconds': 37.417543,
+ 'finish_reason': 'shutdown',
+ 'finish_time': datetime.datetime(2022, 11, 15, 9, 33, 48, 759213),
+ 'httpcompression/response_bytes': 5927058,
+ 'httpcompression/response_count': 52,
+ 'log_count/DEBUG': 57,
+ 'log_count/INFO': 12,
+ 'memusage/max': 64090112,
+ 'memusage/startup': 64090112,
+ 'response_received_count': 52,
+ 'scheduler/dequeued': 52,
+ 'scheduler/dequeued/memory': 52,
+ 'scheduler/enqueued': 52,
+ 'scheduler/enqueued/memory': 52,
+ 'start_time': datetime.datetime(2022, 11, 15, 9, 33, 11, 341670)}
+2022-11-15 17:33:48,761 - INFO - Spider closed (shutdown)
