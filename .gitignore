@@ -26,7 +26,6 @@ share/python-wheels/
 .installed.cfg
 *.egg
 MANIFEST
-lazada_phone_listing/lazada_phone_listing/spiders/creds.py
 lazada_phone_listing/lazada_phone_listing/spiders/lazada_phone_listing.code-workspace
 
 # PyInstaller
