@@ -92,7 +92,7 @@ class MainSpider(scrapy.Spider):
                 item = {
                     'name': data[count]['name'],
                     'brand': data[count]['brandName'],
-                    'price': data[count]['price'],
+                    'price (RM)': data[count]['price'],
                     'link': data[count]['itemUrl'],
                     'shop_rating': data[count]['ratingScore'],
                 }
@@ -101,7 +101,7 @@ class MainSpider(scrapy.Spider):
                 item = {
                     'name': data[count]['name'],
                     'brand': data[count]['brandName'],
-                    'price': 'sold out',
+                    'price (RM)': 'sold out',
                     'link': data[count]['itemUrl'],
                     'shop_rating': data[count]['ratingScore'],
                 }
