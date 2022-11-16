@@ -1,7 +1,5 @@
 import scrapy
 from scrapy import Request
-from scrapy.crawler import CrawlerProcess
-from scrapy.utils.project import get_project_settings
 import json
 
 # Using proxy if unsuccessful
@@ -33,11 +31,11 @@ class MainSpider(scrapy.Spider):
     headers = {
         "authority": "www.lazada.com.my",
         "accept": "application/json, text/plain, */*",
-        "accept-language": "en-US,en;q=0.9",
+        "accept-language": "en-US,en;q=0.9,ms;q=0.8,id;q=0.7",
         "cache-control": "no-cache",
         "dnt": "1",
         "pragma": "no-cache",
-        "referer": "https://www.lazada.com.my/shop-mobiles/?spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG",
+        "referer": "https://www.lazada.com.my/shop-mobiles/?spm=a2o4k.SearchListCategory.cate_2_1.1.632a2had2hadvE",
         "sec-ch-ua": "\"Microsoft Edge\";v=\"107\", \"Chromium\";v=\"107\", \"Not=A?Brand\";v=\"24\"",
         "sec-ch-ua-mobile": "?0",
         "sec-ch-ua-platform": "\"Linux\"",
@@ -45,7 +43,7 @@ class MainSpider(scrapy.Spider):
         "sec-fetch-mode": "cors",
         "sec-fetch-site": "same-origin",
         "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36 Edg/107.0.1418.42",
-        "x-csrf-token": "e557530334835",
+        "x-csrf-token": "7f37648134eea",
         "x-requested-with": "XMLHttpRequest"
     }
 
@@ -89,10 +87,15 @@ class MainSpider(scrapy.Spider):
 
     def parse(self, response):
         # Load json 
-        raw_data = response.text
-        data = json.loads(raw_data)['mods']['listItems']
+        raw_data = response.body
+        data = json.loads(raw_data)
+        data_phone = []
+        data_phone = data['mods']['listItems']
+        data = data_phone
+        print('\n')
+        print(len(data))
         print('\n\n Has {} DATA\n\n'.format(len(data)))
-        for count, phone in enumerate(data):                    
+        for count in range(len(data_phone)):                    
             try:
                 item = {
                     'name': data[count]['name'],
@@ -111,12 +114,3 @@ class MainSpider(scrapy.Spider):
                     'shop_rating': data[count]['ratingScore'],
                 }
                 yield item
-
-process = CrawlerProcess(settings={
-    "FEEDS": {
-        'Lazada_phone_list.csv': {"format": "csv"},
-    },
-})
-
-process.crawl(MainSpider)
-process.start()
