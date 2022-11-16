@@ -5,11 +5,13 @@ from scrapy.utils.project import get_project_settings
 import json
 
 # Using proxy if unsuccessful
-# Get here at https://www.scraperapi.com/?fp_ref=allif-izzuddin-bin-abdullah73
+# Register here at https://www.scraperapi.com/?fp_ref=allif-izzuddin-bin-abdullah73
 # You might want to choose free account
 # Scraperapi proxy API key details will be provided after the registration
 # Follow the instruction in the scraperapi website to setup the proxy
+# Paste the API key inside creds.py module
 
+# Uncomment below if using proxy
 # from creds import API
 # from scraper_api import ScraperAPIClient
 # client = ScraperAPIClient(API)
@@ -70,6 +72,7 @@ class MainSpider(scrapy.Spider):
     url = 'https://www.lazada.com.my/shop-mobiles/?ajax=true&isFirstRequest=true&page={}&spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG'
 
     def start_requests(self):
+        # Comment below if using proxy
         for i in range(1,103):
             request = Request(
             url=self.url.format(i),
@@ -80,6 +83,9 @@ class MainSpider(scrapy.Spider):
             # callback=self.parse
             )
             yield request
+        # Uncomment below if using proxy
+        # for i in range(1,103):
+        #     yield scrapy.Request(client.scrapyGet(url=self.url.format(i), headers=self.headers), dont_filter=True, callback=self.parse_api)
 
     def parse(self, response):
         # Load json 
