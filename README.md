@@ -13,8 +13,8 @@
 ## Run
 - The working directory is lazada_phone_listing/lazada_phone_listing/spiders
 - Activate the installed working environment
-- run <scrapy runspider main.py> in the terminal
-- add --O lazada_list.csv in cli to produce the csv file e.g. 'scrapy runspider main.py --O lazada_list.csv'
+- Run <scrapy runspider main.py> in the terminal
+- Add --O lazada_list.csv in cli to produce the csv file e.g. 'scrapy runspider main.py --O lazada_list.csv'
 
 ## Troubleshoot
 - Error [mod] due to the cookies already expired
