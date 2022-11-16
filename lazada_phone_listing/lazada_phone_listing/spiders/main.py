@@ -1,8 +1,10 @@
 import scrapy
 from scrapy import Request
+from scrapy.crawler import CrawlerProcess
+from scrapy.utils.project import get_project_settings
 import json
 
-# Using proxy
+# Using proxy if unsuccessful
 # Get here at https://www.scraperapi.com/?fp_ref=allif-izzuddin-bin-abdullah73
 # You might want to choose free account
 # Scraperapi proxy API key details will be provided after the registration
@@ -20,8 +22,6 @@ logging.basicConfig(
     filemode='w',
     level = logging.DEBUG,
 )
-
-
 
 class MainSpider(scrapy.Spider):
     name = 'main'
@@ -86,7 +86,6 @@ class MainSpider(scrapy.Spider):
         raw_data = response.text
         data = json.loads(raw_data)['mods']['listItems']
         print('\n\n Has {} DATA\n\n'.format(len(data)))
-        # mods.listItems[count]
         for count, phone in enumerate(data):                    
             try:
                 item = {
@@ -106,3 +105,12 @@ class MainSpider(scrapy.Spider):
                     'shop_rating': data[count]['ratingScore'],
                 }
                 yield item
+
+process = CrawlerProcess(settings={
+    "FEEDS": {
+        'Lazada_phone_list.csv': {"format": "csv"},
+    },
+})
+
+process.crawl(MainSpider)
+process.start()
