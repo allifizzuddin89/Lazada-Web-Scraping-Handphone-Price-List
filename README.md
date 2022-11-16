@@ -8,7 +8,7 @@
 ## Requirement : 
 - Scrapy 2.7.1
 - Python 3.7 or above
-- Any working environment to install the required packages such as conda or pyenv and run the script.
+- Any working environment to install the required packages such as conda or pyenv.
 
 ## Run
 - The working directory is lazada_phone_listing/lazada_phone_listing/spiders
