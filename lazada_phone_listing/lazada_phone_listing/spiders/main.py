@@ -2,7 +2,7 @@ import scrapy
 from scrapy import Request
 import json
 
-# Using proxy if unsuccessful
+# Using proxy if unsuccessful and errors
 # Register here at https://www.scraperapi.com/?fp_ref=allif-izzuddin-bin-abdullah73
 # You might want to choose free account
 # Scraperapi proxy API key details will be provided after the registration
@@ -16,17 +16,23 @@ import json
 
 # Logging
 import logging
+from scrapy.utils.log import configure_logging
+logging.getLogger('__main__').setLevel(logging.DEBUG)
+configure_logging(install_root_handler = False) 
 logging.basicConfig(
     filename="logfile.txt", 
     format='%(asctime)s - %(levelname)s - %(message)s', 
     filemode='w',
-    level = logging.DEBUG,
+    level = logging.ERROR,
 )
 
 class MainSpider(scrapy.Spider):
     name = 'main'
     # allowed_domains = ['x']
     # start_urls = ['http://x/']
+    # logging.getLogger().setLevel(logging.DEBUG)
+
+    url = 'https://www.lazada.com.my/shop-mobiles/?ajax=true&isFirstRequest=true&page=1&spm=a2o4k.SearchListCategory.cate_2_1.1.632a2had2hadvE'
 
     headers = {
         "authority": "www.lazada.com.my",
@@ -35,7 +41,7 @@ class MainSpider(scrapy.Spider):
         "cache-control": "no-cache",
         "dnt": "1",
         "pragma": "no-cache",
-        "referer": "https://www.lazada.com.my/shop-mobiles/?spm=a2o4k.SearchListCategory.cate_2_1.1.632a2had2hadvE",
+        "referer": "https://www.lazada.com.my/shop-mobiles/?page=1&spm=a2o4k.SearchListCategory.cate_2_1.1.632a2had2hadvE",
         "sec-ch-ua": "\"Microsoft Edge\";v=\"107\", \"Chromium\";v=\"107\", \"Not=A?Brand\";v=\"24\"",
         "sec-ch-ua-mobile": "?0",
         "sec-ch-ua-platform": "\"Linux\"",
@@ -47,27 +53,25 @@ class MainSpider(scrapy.Spider):
         "x-requested-with": "XMLHttpRequest"
     }
 
-    # Cookies are dynamic
-    # Feel free to update for every scraping session
     cookies = {
-        "__wpkreporterwid_": "8987d50d-7410-4452-0d4a-838a55cbf24b",
-        "lzd_cid": "2b3f81a9-b3ac-4511-d563-88dc718bd43e",
-        "t_uid": "2b3f81a9-b3ac-4511-d563-88dc718bd43e",
+        "__wpkreporterwid_": "a96fbf16-a74e-4fed-a109-429f8029a231",
         "hng": "MY|en-MY|MYR|458",
-        "userLanguageML": "en",
-        "_m_h5_tk": "2ab15fa1ff4dd42259c8217ac2ad2449_1668508613562",
-        "_m_h5_tk_enc": "65c3d44ac8a9784847f3c6c28596a59f",
-        "_bl_uid": "Ujlg8aUzheqy1488ke9tys9ukwIX",
-        "lzd_sid": "1b4b47eeee23df99f7504fd28cec55f7",
-        "_tb_token_": "e557530334835",
-        "t_fv": "1668500695130",
-        "t_sid": "PgAFQBrejpUc1sEjEKcrkX8qen6g3t9j",
+        "hng.sig": "3PRPmcBmKLS4UwrxxIzxYKE2BjFcClNbRbYGSaUai_0",
+        "lzd_cid": "dca32a84-0fb1-4d75-9b2f-d4253e500ed4",
+        "t_uid": "dca32a84-0fb1-4d75-9b2f-d4253e500ed4",
+        "lzd_sid": "18ceb197160db5065c2cbb1752e58126",
+        "_tb_token_": "7f37648134eea",
+        "_bl_uid": "hmljt9vpwXd5C6mhb04emO2hvmme",
+        "t_fv": "1667182830196",
+        "age_limit": "18Y",
+        "t_sid": "uXzf5ga3aGc1SCMeaMDaQwuP0KaoVfYK",
         "utm_channel": "NA",
-        "l": "eBIVRAqnT1tJPFO6BOfwourza77OSIRAguPzaNbMiOCPOL5p5andW6zmR9T9C3GNh6vJR3PB699XBeYBYI2pH8i7DSSRMsHmn",
-        "isg": "BAUFcQoByvc9Nu6rO_-Q8HJXFEg_wrlUM_PnFgdqwTxLniUQzxLJJJN4qMpo3tEM"
+        "_m_h5_tk": "60caf12de55dd41acad4d04a7b6c7382_1668599271096",
+        "_m_h5_tk_enc": "10b804667916d5e088fe7f0a95d30fc1",
+        "x5sec": "7b22617365727665722d6c617a6164613b32223a223935616261623032316136663435636131393437353165363730356230303864434e625330707347454e4b6d793779456f4d614d417a43633463657941304143227d",
+        "l": "eBa4qxxHLhCnq3mUBOfwourza77OSIRAguPzaNbMiOCPOBfp5gscW6zJKWY9C3GNh6vJR3PB699XBeYBYI2pH8i7DSSRMsHmn",
+        "isg": "BHR0op6Sq9Mhoz68PpgU-xDdRTvmTZg36vRWxQ7VAP-CeRTDNl1oxyo_-bmhgdCP"
     }
-
-    url = 'https://www.lazada.com.my/shop-mobiles/?ajax=true&isFirstRequest=true&page={}&spm=a2o4k.home.cate_2_1.1.75f8191bjdZqQG'
 
     def start_requests(self):
         # Comment below if using proxy
@@ -76,26 +80,24 @@ class MainSpider(scrapy.Spider):
             url=self.url.format(i),
             method='GET',
             dont_filter=True,
-            cookies=self.cookies,
             headers=self.headers,
+            cookies=self.cookies
             # callback=self.parse
             )
             yield request
         # Uncomment below if using proxy
         # for i in range(1,103):
-        #     yield scrapy.Request(client.scrapyGet(url=self.url.format(i), headers=self.headers), dont_filter=True, callback=self.parse_api)
+        #     yield scrapy.Request(client.scrapyGet(url=self.url.format(i), headers=self.headers), dont_filter=True)
 
     def parse(self, response):
-        # Load json 
+        # Load json
         raw_data = response.body
-        data = json.loads(raw_data)
-        data_phone = []
-        data_phone = data['mods']['listItems']
-        data = data_phone
-        print('\n')
-        print(len(data))
+        data = json.loads(raw_data)['mods']['listItems']
+        # data_phone = []
+        # data_phone = data['mods']['listItems']
+        # data = data_phone
         print('\n\n Has {} DATA\n\n'.format(len(data)))
-        for count in range(len(data_phone)):                    
+        for count,phone in enumerate(data):                    
             try:
                 item = {
                     'name': data[count]['name'],
