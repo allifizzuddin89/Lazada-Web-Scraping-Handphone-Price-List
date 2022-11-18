@@ -3,7 +3,6 @@
 - Extracting mobile phones price and details from Lazada Malaysia
 - Scraping framework : Scrapy
 - Scraping through API, extracting data from JSON
-- This is only meant for educational, research and proof of work purpose only. I will not responsible for any illegal activities.
 
 ## Requirement : 
 - Scrapy 2.7.1
@@ -21,3 +20,6 @@
 - Any error occur highly due to link or cookies expired
 - Solution: 1. Refresh the cookies OR
             2. Using proxy (refer main.py)
+
+  ## DISCLAIMER
+- This is only meant for educational, research and proof of work purpose only. I will not responsible for any illegal activities.
