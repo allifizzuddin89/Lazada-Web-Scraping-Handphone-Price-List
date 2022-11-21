@@ -21,7 +21,7 @@
 - refer [CONDA Environment Installation](https://docs.anaconda.com/anaconda/install/)
  
 ### Example How To Run The Script
-"""python
+"""bash
   git clone https://github.com/allifizzuddin89/Lazada-Web-Scraping-Handphone-Price-List.git
 """
  - conda create --name scraping_env -c conda-forge python=3.10.8 scrapy=2.7.1
