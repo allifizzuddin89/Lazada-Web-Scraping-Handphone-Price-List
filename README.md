@@ -23,7 +23,7 @@
 ### Example How To Run The Script
 """python
   git clone https://github.com/allifizzuddin89/Lazada-Web-Scraping-Handphone-Price-List.git
-  """
+"""
  - conda create --name scraping_env -c conda-forge python=3.10.8 scrapy=2.7.1
  - conda activate scraping_env
  - scrapy runspider Lazada-Web-Scraping-Handphone-Price-List.lazada_phone_listing.lazada_phone_listing.spiders.main.py --O lazada_mobilephone_list.csv
