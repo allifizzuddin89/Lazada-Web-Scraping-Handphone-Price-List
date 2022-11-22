@@ -39,10 +39,11 @@
  ```
 
 ## Troubleshoot
-- Error might happened due to the cookies already expired or request being rejected by the server.
+- Error might happened due to the cookies already expired or request being rejected by the server or he url simply has been changed by the administrator.
 - Solution: 
-  1. Refresh the cookies OR
+  1. Refresh the cookies (if any) OR
   2. Using proxy (refer main.py)
+  3. Replace with new url
   
 ## DISCLAIMER
 - This work only meant for educational, research and proof of work purpose only. 
