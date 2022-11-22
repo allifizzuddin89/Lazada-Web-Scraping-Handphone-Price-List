@@ -40,8 +40,9 @@
 
 ## Troubleshoot
 - Error might happened due to the cookies already expired or request being rejected by the server.
-- Solution: 1. Refresh the cookies OR
-            2. Using proxy (refer main.py)
+- Solution: 
+  1. Refresh the cookies OR
+  2. Using proxy (refer main.py)
   
 ## DISCLAIMER
 - This work only meant for educational, research and proof of work purpose only. 
