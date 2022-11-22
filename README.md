@@ -18,17 +18,25 @@
 - Add --O lazada_mobilephone_list.csv in cli to produce the csv file e.g. 'scrapy runspider main.py --O lazada_mobilephone_list.csv'
 
 ### Install environment
-- refer [CONDA Environment Installation](https://docs.anaconda.com/anaconda/install/)
+- Refer [CONDA Environment Installation](https://docs.anaconda.com/anaconda/install/)
  
-### Example How To Run The Script
+### HOW-TO
+- Clone the repository
+```bash  
+  git clone https://github.com/allifizzuddin89/Lazada-Web-Scraping-Handphone-Price-List.git  
+```
+- Create working environment (skip if already have any working environment)
 ```bash
-  
-  git clone https://github.com/allifizzuddin89/Lazada-Web-Scraping-Handphone-Price-List.git
-  
-```  
- - conda create --name scraping_env -c conda-forge python=3.10.8 scrapy=2.7.1
- - conda activate scraping_env
- - scrapy runspider Lazada-Web-Scraping-Handphone-Price-List.lazada_phone_listing.lazada_phone_listing.spiders.main.py --O lazada_mobilephone_list.csv
+  conda create --name scraping_env -c conda-forge python=3.9.13 scrapy=2.7.1
+```
+- Activate the working environment
+```bash
+  conda activate scraping_env
+```
+ - Run the spider
+ ```bash
+    scrapy runspider Lazada-Web-Scraping-Handphone-Price-List.lazada_phone_listing.lazada_phone_listing.spiders.main.py --O lazada_mobilephone_list.csv
+ ```
 
 ## Troubleshoot
 - Error might happened due to the cookies already expired or request being rejected by the server.
