@@ -35,7 +35,7 @@
 ```
  - Run the spider
  ```bash
-    scrapy runspider Lazada-Web-Scraping-Handphone-Price-List.lazada_phone_listing.lazada_phone_listing.spiders.main.py --O lazada_mobilephone_list.csv
+    scrapy runspider Lazada-Web-Scraping-Handphone-Price-List/lazada_phone_listing/lazada_phone_listing/spiders/main.py --O lazada_mobilephone_list.csv
  ```
 
 ## Troubleshoot
