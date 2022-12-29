@@ -39,7 +39,8 @@
  ```
 
 ## Troubleshoot
-- Error might happened due to the cookies already expired or request being rejected by the server or he url simply has been changed by the administrator.
+- Error might happened due to the cookies already expired or request being rejected by the server or the url simply has been changed by the administrator.
+  - Please bear in mind, the the web owner might change the web's code dynamically anytime. Therefore this web scraping code might not work.
 - Solution: 
   1. Refresh the cookies (if any) OR
   2. Using proxy (refer main.py)
