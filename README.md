@@ -15,7 +15,7 @@
 - Run the main.py in the working directory.
 - Run <scrapy runspider main.py> in the terminal in the working directory
   OR simply run <scrapy crawl main.py>
-- Add --O lazada_mobilephone_list.csv in cli to produce the csv file e.g. 'scrapy runspider main.py --O lazada_mobilephone_list.csv'
+- Add -O lazada_mobilephone_list.csv in cli to produce the csv file e.g. 'scrapy runspider main.py --O lazada_mobilephone_list.csv'
 
 ### Install environment
 - Refer [CONDA Environment Installation](https://docs.anaconda.com/anaconda/install/)
@@ -35,7 +35,7 @@
 ```
  - Run the spider
  ```bash
-    scrapy runspider Lazada-Web-Scraping-Handphone-Price-List/lazada_phone_listing/lazada_phone_listing/spiders/main.py --O lazada_mobilephone_list.csv
+    scrapy runspider Lazada-Web-Scraping-Handphone-Price-List/lazada_phone_listing/lazada_phone_listing/spiders/main.py -O lazada_mobilephone_list.csv
  ```
 
 ## Troubleshoot
